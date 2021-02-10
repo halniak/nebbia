@@ -1,8 +1,5 @@
 
 # keep the code DRY - Don't Repeat Yourself
-import math
-import sys
-
 import requests
 
 month_days = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
@@ -29,3 +26,4 @@ print(days_in_month(2017, 2))
 
 r = requests.get("http://nebbia.bio")
 print(r.status_code)
+print(r.ok)
